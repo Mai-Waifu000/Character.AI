@@ -1,0 +1,16 @@
+from colorama import Fore
+import re
+
+colors = {'Attack': Fore.GREEN, 'Defend': Fore.RED, 'Digit': Fore.BLUE}
+
+# define the function to color words that match your pattern
+def color_words(text, pattern, colors):
+    matches = re.findall(pattern, text)
+    for match in matches:
+        text = text.replace(match, f"\t{match.lower()}")
+        color = colors[match.lower()]
+        text = text.replace(match, f"\n{match}{color}")
+
+# call the function
+text = "I attack the enemy with all my might, and the enemy defends in return. There were 12 cars on my way to work!"
+color_words(text, r"Attack\w|Defend\w|[1-2-3-4-5-6-7-8-9-0]", colors)
