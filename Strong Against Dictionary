@@ -1,0 +1,13 @@
+from collections import defaultdict
+
+strong_against_dictionary = defaultdict(list)
+
+strong_against_dictionary['水'] = ['火']
+strong_against_dictionary['火'] = ['風']
+strong_against_dictionary['風'] = ['地']
+strong_against_dictionary['地'] = ['水']
+strong_against_dictionary['光'] = ['闇']
+strong_against_dictionary['闇'] = ['光']
+
+# Almighty is strong against no other element
+strong_against_dictionary['神'] = []
