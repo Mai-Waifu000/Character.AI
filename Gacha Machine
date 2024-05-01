@@ -12,4 +12,4 @@ UR_pull_threshold = 10
 
 
 #Making the gacha
-def make_gacha_machine(max_pulls, n=N,
+def make_gacha_machine(max_pulls, n=N, 
