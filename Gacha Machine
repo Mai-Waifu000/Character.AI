@@ -1,0 +1,15 @@
+import random
+
+    #The chances of winning
+    N = 0.5; R = 0.25; SR = 0.125; SSR = 0.0625; UR = 0.03125
+
+#The maximum number of pulls allowed
+max_pulls = 10
+
+#This is the number of pulls before the pull will guarantee a certain rarity
+SR_pull_threshold = 5
+UR_pull_threshold = 10
+
+
+#Making the gacha
+def make_gacha_machine(max_pulls, n=N,
